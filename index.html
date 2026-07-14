@@ -5,43 +5,41 @@ math: true
 ---
 
 <section class="home">
-  <div class="hero">
-    <div>
-      <p class="eyebrow">Academic website</p>
-      <h1>Hugo Belzil</h1>
-      <p class="hero-summary">
-        I am an academic researcher. This site is a home for my publications,
-        teaching, notes, and selected projects. Replace this paragraph with your
-        current appointment, research fields, and the questions that organize
-        your work.
+  <header class="home-header">
+    <h1>Hugo Belzil</h1>
+    <p>Academic researcher</p>
+  </header>
+
+  <div class="about-grid">
+    <div class="about-copy">
+      <p>
+        I am an academic researcher working in economics, applied methods, and
+        quantitative social science.
       </p>
-      <div class="quick-links" aria-label="Quick links">
-        <a class="button" href="{{ '/publications/' | relative_url }}">Publications</a>
-        <a class="text-button" href="{{ '/cv/' | relative_url }}">CV</a>
+      <p>
+        My research combines theoretical questions with empirical and
+        computational approaches. You can find further details in my
+        <a href="{{ '/publications/' | relative_url }}">publications</a> and
+        <a href="{{ '/cv/' | relative_url }}">curriculum vitae</a>.
+      </p>
+      <p class="contact-links">
         {% if site.email and site.email != "" %}
-          <a class="text-button" href="mailto:{{ site.email }}">Email</a>
+          <a href="mailto:{{ site.email }}">Email</a><span aria-hidden="true">&middot;</span>
         {% endif %}
-      </div>
+        <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      </p>
     </div>
-    <aside class="profile-panel" aria-label="Profile summary">
+    <figure class="profile-photo">
       <img src="{{ '/assets/img/profile-placeholder.svg' | relative_url }}" alt="Profile placeholder for Hugo Belzil">
-      <h2>Research interests</h2>
-      <p>Economics, applied methods, and quantitative social science.</p>
-    </aside>
+    </figure>
   </div>
 
-  <div class="section-grid" aria-label="Site highlights">
-    <section class="info-card">
-      <h2>Research</h2>
-      <p>Maintain a readable list of articles, working papers, preprints, and replication packages.</p>
-    </section>
-    <section class="info-card">
-      <h2>Teaching</h2>
-      <p>Share current courses, syllabi, office-hour information, and teaching materials.</p>
-    </section>
-    <section class="info-card">
-      <h2>Notes</h2>
-      <p>Post short technical notes with LaTeX, for example $$\hat{\theta} = \arg\min_\theta Q_n(\theta).$$</p>
-    </section>
-  </div>
+  <section class="home-section">
+    <h2>Research</h2>
+    <p>
+      My current work studies economic and social questions using quantitative
+      methods. Mathematical notation is supported throughout the site, for
+      example $\hat{\theta} = \arg\min_\theta Q_n(\theta)$.
+    </p>
+  </section>
 </section>

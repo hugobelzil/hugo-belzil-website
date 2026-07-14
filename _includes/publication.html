@@ -8,11 +8,11 @@
       <p>{{ publication.abstract }}</p>
     {% endif %}
     {% if publication.links %}
-      <div class="button-row">
+      <p class="publication-links">
         {% for link in publication.links %}
-          <a class="text-button" href="{{ link.url }}">{{ link.label }}</a>
+          <a href="{{ link.url }}">[{{ link.label }}]</a>
         {% endfor %}
-      </div>
+      </p>
     {% endif %}
   </div>
 </article>
