@@ -8,6 +8,7 @@ baseurl: ""
 
 repository: hugobelzil/hugo-belzil-website
 github_username: hugobelzil
+linkedin_username: hugo-belzil
 
 markdown: kramdown
 kramdown:

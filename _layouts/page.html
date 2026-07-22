@@ -9,7 +9,7 @@ layout: default
       <p class="page-subtitle">{{ page.subtitle }}</p>
     {% endif %}
   </header>
-  <div class="content">
+  <div class="content{% if page.wide %} content-wide{% endif %}">
     {{ content }}
   </div>
 </section>

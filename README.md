@@ -7,8 +7,7 @@ edit and deploy.
 ## Edit Content
 
 - Home page: `index.html`
-- Publications: `_data/publications.yml`
-- Teaching: `teaching.md`
+- Research: `research.md`
 - CV: `cv.md`
 - Notes: `_posts/`
 - Navigation: `_data/navigation.yml`
